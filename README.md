@@ -36,7 +36,7 @@ Enode's link sdk uses the MaterialComponents android app theme, `expo-enode-link
 ```json
 "plugins": [
     [
-        "@youssefhenna/expo-enode-link-sdk", "Theme.MaterialComponents.DayNight.NoActionBar"
+        "@getbright/expo-enode-link-sdk", "Theme.MaterialComponents.DayNight.NoActionBar"
     ]
 ]
 ```
@@ -96,30 +96,31 @@ This is the same plugin used in the Android config and not a seperate one. The f
 Install the package
 
 ```
-npx expo install @youssefhenna/expo-enode-link-sdk
+npx expo install expo-enode-link-sdk
 ```
 
 Import the package
 
 ```ts
-import * as ExpoEnodeLinkSDK from "@youssefhenna/expo-enode-link-sdk";
+import { EnodeLink, startLink } from "@getbright/expo-enode-link-sdk";
 ```
 
 Listen to the result events by:
 
 ```tsx
-React.useEffect(() => {
-  const resultListener = ExpoEnodeLinkSDK.listenToResult(
-    (code, errorMessage) => {
-      // Add your code here to handle the result
-    },
-  );
-  return () => resultListener.remove();
-}, []);
+import { useEventListener } from 'expo';
+import { EnodeLink } from '@getbright/expo-enode-link-sdk';
+
+function FooComponent() {
+  useEventListener(EnodeLink, 'OnResult', ({ code, errorMessage }) => {
+    // Handle result
+  });
+}
 ```
 
 Launch/Show the Enode Link UI
 
 ```ts
-ExpoEnodeLinkSDK.show("<YOUR_TOKEN_HERE>");
+import { startLink } from '@getbright/expo-enode-link-sdk';
+startLink("<YOUR_TOKEN_HERE>");
 ```
