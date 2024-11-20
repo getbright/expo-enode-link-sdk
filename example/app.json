@@ -17,14 +17,14 @@
       "infoPlist": {
         "NSBluetoothAlwaysUsageDescription": "Our app requires Bluetooth to connect with energy devices, enabling efficient device management and enhanced user experience."
       },
-      "bundleIdentifier": "com.youssefhenna.expo-enode-example"
+      "bundleIdentifier": "com.expo-enode-example"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.youssefhenna.expo_enode_example"
+      "package": "com.expo_enode_example"
     },
     "web": {
       "favicon": "./assets/favicon.png"

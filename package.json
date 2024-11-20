@@ -1,6 +1,6 @@
 {
-  "name": "@youssefhenna/expo-enode-link-sdk",
-  "version": "1.0.2",
+  "name": "@getbright/expo-enode-link-sdk",
+  "version": "1.1.0",
   "description": "An Expo Module integration for Enode's Link SDK",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -21,23 +21,29 @@
     "expo-enode-link-sdk",
     "ExpoEnodeLinkSDK"
   ],
-  "repository": "https://github.com/YoussefHenna/expo-enode-link-sdk",
+  "repository": "https://github.com/getbright/expo-enode-link-sdk.git",
   "bugs": {
-    "url": "https://github.com/YoussefHenna/expo-enode-link-sdk/issues"
+    "url": "https://github.com/getbright/expo-enode-link-sdk/issues"
   },
-  "author": "Youssef Henna <youssef.hisham14@gmail.com> (https://github.com/YoussefHenna)",
+  "author": "John Larsson <john.helarsson@gmail.com> (https://github.com/JHelar)",
+  "contributors": [
+    "Youssef Henna <youssef.hisham14@gmail.com> (https://github.com/YoussefHenna)"
+  ],
   "license": "MIT",
-  "homepage": "https://github.com/YoussefHenna/expo-enode-link-sdk#readme",
-  "dependencies": {},
+  "homepage": "https://github.com/getbright/expo-enode-link-sdk#readme",
   "devDependencies": {
-    "@types/react": "^18.0.25",
-    "expo-module-scripts": "^3.5.2",
-    "expo-modules-core": "~1.11.14",
-    "@expo/config-plugins": "~8.0.10"
+    "@expo/config-plugins": "~9.0.9",
+    "@types/react": "^18.3.1",
+    "expo-module-scripts": "^4.0.2",
+    "expo-modules-core": "^2.0.4"
   },
   "peerDependencies": {
     "expo": "*",
     "react": "*",
     "react-native": "*"
+  },
+  "packageManager": "yarn@3.5.0",
+  "engines": {
+    "node": "22.11.x"
   }
 }
