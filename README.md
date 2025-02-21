@@ -132,3 +132,14 @@ In this repo run
 `yarn link`
 
 This will register the package in your local yarn registry. Then in your project run `yarn link @getbright/expo-enode-link-sdk` to link the package to your project.
+
+## Publish the package
+
+### Prerequisites
+- Create a Github Personal AccessToken, ensure that the token has `read:packages` set
+- Create a `.npmrc` file in your home directory: `touch ~/.npmrc`
+- Paste the following line in the `.npmrc` file (replace GITHUB_PAT with your generated personal GitHub token): `//npm.pkg.github.com/:_authToken=GITHUB_PAT`
+
+### Publish
+
+Publish to Github: `npm publish`
