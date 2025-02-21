@@ -1,6 +1,6 @@
 {
   "name": "@getbright/expo-enode-link-sdk",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "An Expo Module integration for Enode's Link SDK",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -27,7 +27,8 @@
   },
   "author": "John Larsson <john.helarsson@gmail.com> (https://github.com/JHelar)",
   "contributors": [
-    "Youssef Henna <youssef.hisham14@gmail.com> (https://github.com/YoussefHenna)"
+    "Youssef Henna <youssef.hisham14@gmail.com> (https://github.com/YoussefHenna)",
+    "Jonathan Boellke <jonathan.boellke@gmail.com> (https://github.com/Kaakans)"
   ],
   "license": "MIT",
   "homepage": "https://github.com/getbright/expo-enode-link-sdk#readme",
