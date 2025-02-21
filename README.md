@@ -124,3 +124,11 @@ Launch/Show the Enode Link UI
 import { startLink } from '@getbright/expo-enode-link-sdk';
 startLink("<YOUR_TOKEN_HERE>");
 ```
+
+## Local usage
+
+In this repo run
+
+`yarn link`
+
+This will register the package in your local yarn registry. Then in your project run `yarn link @getbright/expo-enode-link-sdk` to link the package to your project.
